@@ -44,18 +44,18 @@ jobs: # a collection of steps
       # Only necessary if app uses webpacker or yarn in some other way
       - restore_cache:
           keys:
-            - rails-demo-yarn-{{ checksum "yarn.lock" }}
-            - rails-demo-yarn-
+            - testing-rails-{{ checksum "Gemfile.lock" }}
+            - testing-rails-
 
       - run:
-          name: Yarn Install
-          command: yarn install --cache-folder ~/.cache/yarn
+          name: bundle Install
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
 
       # Store yarn / webpacker cache
       - save_cache:
-          key: rails-demo-yarn-{{ checksum "yarn.lock" }}
+          key: testing-rails-{{ checksum "Gemfile.lock" }}
           paths:
-            - ~/.cache/yarn
+            - vendor/bundle
 
       - run:
           name: Wait for DB

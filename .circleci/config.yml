@@ -41,26 +41,6 @@ jobs: # a collection of steps
           paths:
             - vendor/bundle
 
-      # Only necessary if app uses webpacker or yarn in some other way
-      - restore_cache:
-          keys:
-            - testing-rails-{{ checksum "Gemfile.lock" }}
-            - testing-rails-
-
-      - run:
-          name: bundle Install
-          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
-
-      # Store yarn / webpacker cache
-      - save_cache:
-          key: testing-rails-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-
-      - run:
-          name: Wait for DB
-          command: dockerize -wait tcp://localhost:5432 -timeout 1m
-
       - run:
           name: Database setup
           command: bin/rails db:schema:load --trace
@@ -77,4 +57,3 @@ jobs: # a collection of steps
       # Save test results for timing analysis
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test_results
-      # See https://circleci.com/docs/2.0/d

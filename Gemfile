@@ -81,3 +81,4 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+gem 'concurrent-ruby', require: 'concurrent'

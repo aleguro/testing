@@ -291,6 +291,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
+  concurrent-ruby
   database_cleaner
   devise
   execjs

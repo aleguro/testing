@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/../testing-rails/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -607,12 +607,12 @@
       <option name="presentableId" value="Default" />
       <updated>1578425107082</updated>
       <workItem from="1578425110429" duration="12424000" />
-      <workItem from="1579010579341" duration="23011000" />
+      <workItem from="1579010579341" duration="23404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35435000" />
+    <option name="totallyTimeSpent" value="35828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="697" extended-state="6" />
@@ -1061,7 +1061,7 @@
     <entry file="file://$PROJECT_DIR$/../testing-rails/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
           <folding />
         </state>
       </provider>

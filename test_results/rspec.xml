@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="4" skipped="0" failures="0" errors="0" time="17.454296" timestamp="2020-01-16T17:47:36-03:00" hostname="Alejandros-MacBook-Air.local">
+<properties>
+<property name="seed" value="11649"/>
+</properties>
+<testcase classname="spec.integration.shops_spec" name="Shop controller index page" file="./spec/integration/shops_spec.rb" time="13.568727"></testcase>
+<testcase classname="spec.integration.shops_spec" name="Shop controller view item" file="./spec/integration/shops_spec.rb" time="2.440675"></testcase>
+<testcase classname="spec.models.shop_spec" name="Shop is expected to validate that :name cannot be empty/falsy" file="./spec/models/shop_spec.rb" time="0.013420"></testcase>
+<testcase classname="spec.models.shop_spec" name="Shop is expected to belong to category required: true" file="./spec/models/shop_spec.rb" time="0.005311"></testcase>
+</testsuite>

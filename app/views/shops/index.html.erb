@@ -1,0 +1,19 @@
+<h1>Listing shops</h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Category</td>
+    <td>Actions</td>
+  </tr>
+  <% @shops.each do |shop| %>
+    <tr>
+      <td><%= link_to shop.name, shop_path(shop.id), class: 'shop_name'  %></td>
+      <td><%= link_to shop.category.name %></td>
+      <td><%= link_to 'Edit', :action => 'edit', :id => shop.id %>
+        <%= link_to 'Destroy', {:action => 'destroy', :id => shop.id}, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<br />
+<%= link_to 'New Shop', :action => 'new' %>

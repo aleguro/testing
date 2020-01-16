@@ -1,0 +1,6 @@
+<%= form_for @shop do |f| %>
+    <p>Enter Shops' Name: <%= f.text_field :name, placeholder: "shop's name" %></p>
+    <p>Select category: <%= f.select :category_id, options_for_select(@categories.collect{|c| [c.name, c.id] }) %></p>
+
+    <%= f.submit %>
+<% end %>

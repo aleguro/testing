@@ -1,0 +1,7 @@
+<h1>Name: <%=h @shop.name %></h1>
+<h1>Category: <%=h @shop.category.name %></h1>
+
+<p>Created: <i><%= time_ago_in_words(@shop.created_at) %> ago</i></p>
+
+<%= link_to 'Edit', :action => 'edit', :id => @shop.id %> |
+<%= link_to 'Back', :action => nil %>

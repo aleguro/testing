@@ -78,3 +78,5 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'devise'
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby

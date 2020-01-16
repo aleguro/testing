@@ -9,7 +9,6 @@ gem 'rails', '~> 5.2.1'
 #gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 #gem 'mysql2'
 gem 'pg'
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -59,6 +58,7 @@ group :development do
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'faker'
   gem 'capybara'
   gem 'guard-rspec'

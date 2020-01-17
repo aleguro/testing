@@ -80,12 +80,12 @@ class ActionDispatch::IntegrationTest
   # Use super wherever this method is redefined in your individual test classes
   def teardown
     Capybara.reset_sessions!
-    #Capybara.use_default_driver
-    Capybara.default_driver = :selenium
+    Capybara.use_default_driver
+    #Capybara.default_driver = :selenium
   end
 end
 
-Capybara.default_driver = :selenium
+#Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 5
 #Capybara.javascript_driver = :poltergeist
 #Capybara.server_port = 1234 + ENV['TEST_ENV_NUMBER'].to_i

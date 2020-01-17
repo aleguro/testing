@@ -17,7 +17,7 @@ RSpec.describe 'Shop controller', type: :feature do
 
     visit shops_path
 
-    page.save_screenshot('screenshot.png')
+    #page.save_screenshot('screenshot.png')
 
     element   = find('.shop_name', match: :first)
     link_text = element.text
